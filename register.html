@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - PKTS Karate</title>
+    <link rel="icon" href="logos/PKTS LOGO.png" type="image/png">
+    <link rel="stylesheet" href="css/register.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="fade-in">
+  <div class="top-bar">
+    <header class="main-header">
+      <div class="logo-container">
+        <a href="homepage.html" class="logo-text">
+          <img src="logos/PKTS LOGO.png" alt="PKTS Logo" class="header-logo">
+        </a>
+      </div>
+      <div class="main-nav-container">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="Homepage.html" class="active">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li class="dropdown has-submenu"><a href="">PRODUCTS</a>
+            <div class="dropdown-content">
+              <a href="uniform.html">Uniforms</a>
+              <a href="eqpmnt.html">Gears</a>
+            </div></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="register.html">APPOINTMENT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="logo-container">
+        <a href="cart.html">
+          <img src="logos/shopping-cart (1).png" alt="Cart Logo" class="header-logo-cart">
+        </a>
+        <a href="homepage.html" class="logo-text">
+          <img src="logos/JKS LOGO.png" alt="JKS Logo" class="header-logo">
+        </a>
+    </div>
+  </header>
+</div>
+
+<div class="job-application">
+  <b><h1>Appointment</h1></b>
+  <p>Complete the form to schedule your appointment and begin your karate journey.</p>
+  <form action="contact.html" method="get">
+    <label for="fullname">Full Name</label>
+      <div class="form-row">
+        <div class="form-group">
+          <input type="text" id="firstName" placeholder="First Name" required oninput="this.value = this.value.replace(/[0-9]/g, '')">
+        </div>
+        <div class="form-group">
+          <input type="text" id="middleName" placeholder="Middle Name" oninput="this.value = this.value.replace(/[0-9]/g, '')">
+        </div>
+        <div class="form-group">
+          <input type="text" id="lastName" placeholder="Last Name" required oninput="this.value = this.value.replace(/[0-9]/g, '')">
+        </div>
+      </div>
+      
+    <label for="address">Current Address</label>
+      <div class="form-group">
+        <input type="text" placeholder="Street Address" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <input type="text" placeholder="City" required>
+        </div>
+        <div class="form-group">
+          <select required>
+            <option disabled selected>State / Province</option>
+            <option>Ilocos Norte</option>
+            <option>Ilocos Sur</option>
+            <option>La Union</option>
+            <option>Pangasinan</option>
+            <option>Benguet</option>
+            <option>Bulacan</option>
+            <option>Pampanga</option>
+            <option>Batangas</option>
+            <option>Cavite</option>
+            <option>Laguna</option>
+            <option>Quezon</option>
+            <option>Rizal</option>
+            <option>National Capital Region (NCR)</option>
+            <option>Cebu</option>
+            <option>Davao del Sur</option>
+          </select>
+        </div></div>
+    <div class="form-row">
+      <div class="form-group">
+        <input type="text" placeholder="Postal / Zip Code" required maxlength="4">   
+      </div></div>
+      
+    <label for="email">Email Address</label>
+     <div class="form-group">
+       <input type="email" placeholder="example@example.com" required pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+     </div>
+      
+    <label for="phone">Phone Number</label>
+     <div class="form-row">
+       <div class="form-group">
+         <input type="text" placeholder="Phone Number" required oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="11">
+       </div></div>
+
+    <button type="submit">Book your Appointment Now!</button>
+</form></div>
+<footer>
+    <p>&copy; 2025 PKTS Karate Dojo. All Rights Reserved.</p>
+</footer>
+<div id="cart-toast" class="toast">Thank You For Booking an Appointment With Us!</div>
+<script src="js/appoint.js"></script>
+</body>
+</html>

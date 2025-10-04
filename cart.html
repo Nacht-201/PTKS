@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipments</title>
+    <link rel="icon" href="logos/PKTS LOGO.png" type="image/png">
+    <link rel="stylesheet" href="css/cart.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("gFtSbqaDqpGIe8AVh"); 
+    </script>
+</head>
+<body>
+  <div class="top-bar">
+    <header class="main-header">
+      <div class="logo-container">
+        <a href="homepage.html" class="logo-text">
+          <img src="logos/PKTS LOGO.png" alt="PKTS Logo" class="header-logo">
+        </a>
+      </div>
+      <div class="main-nav-container">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="Homepage.html" class="active">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li class="dropdown has-submenu"><a href="">PRODUCTS</a>
+            <div class="dropdown-content">
+              <a href="uniform.html">Uniforms</a>
+              <a href="eqpmnt.html">Gears</a>
+            </div></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="register.html">APPOINTMENT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="logo-container">
+        <a href="cart.html">
+          <img src="logos/shopping-cart (1).png" alt="Cart Logo" class="header-logo-cart">
+        </a>
+        <a href="homepage.html" class="logo-text">
+          <img src="logos/JKS LOGO.png" alt="JKS Logo" class="header-logo">
+        </a>
+    </div>
+  </header>
+</div>
+
+<div class="page-wrapper">
+    <div class="container">
+      <h1>Your Shopping Cart</h1>
+
+      <div id="cart-items">
+      </div>
+
+      <div class="cart-summary">
+        <p class="subtotal">
+          Subtotal: <span id="subtotal">₱0.00</span>
+        </p>
+        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+          <button id="clear-cart-btn" class="clear-cart-button">Clear Cart</button>
+          <button id="checkout-btn" class="checkout-button">Checkout</button>
+        </div>
+      </div>
+<div id="cart-toast" class="toast">Thank You For Your Patronage!</div>
+</div></div>
+
+<footer>
+    <p>&copy; 2025 PKTS Karate Dojo. All Rights Reserved.</p>
+</footer>
+
+<script src="js/cart-view.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

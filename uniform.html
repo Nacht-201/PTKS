@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uniforms</title>
+    <link rel="icon" href="logos/PKTS LOGO.png" type="image/png">
+    <link rel="stylesheet" href="css/prod.css" />
+</head>
+<body>
+<div class="page-wrapper">
+  <div class="top-bar">
+    <header class="main-header">
+      <div class="logo-container">
+        <a href="homepage.html" class="logo-text">
+          <img src="logos/PKTS LOGO.png" alt="PKTS Logo" class="header-logo">
+        </a>
+      </div>
+      <div class="main-nav-container">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="Homepage.html" class="active">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li class="dropdown has-submenu"><a href="">PRODUCTS</a>
+            <div class="dropdown-content">
+              <a href="uniform.html">Uniforms</a>
+              <a href="eqpmnt.html">Gears</a>
+            </div></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="register.html">APPOINTMENT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="logo-container">
+        <a href="cart.html">
+          <img src="logos/shopping-cart (1).png" alt="Cart Logo" class="header-logo-cart">
+        </a>
+        <a href="homepage.html" class="logo-text">
+          <img src="logos/JKS LOGO.png" alt="JKS Logo" class="header-logo">
+        </a>
+    </div>
+  </header>
+</div>
+    <div class="container">
+        <div class="product" data-name="Kata Gi canvas Red and Blue" data-price="₱6,500" data-image="PROD/Uniform1.jpeg">
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide active">
+                        <img src="PROD/Uniform1.jpeg" alt="Uni1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="PROD/Uniform4.jpeg" alt="Uni4">
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <div class="carousel-indicator active"></div>
+                    <div class="carousel-indicator"></div>
+                </div>
+            </div>
+            <p class="product-name">Kata Gi canvas Red and Blue</p>
+            <p class="price">₱6,500</p>
+            <div class="size-selection">
+                <select>
+                    <option>Please select size</option>
+                    <option>140 CM</option>
+                    <option>150 CM</option>
+                    <option>160 CM</option>
+                    <option>170 CM</option>
+                    <option>180 CM</option>
+                    <option>185 CM</option>
+                    <option>190 CM</option>
+                </select>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Kumite Gi Super Light Air Cool Red and Blue" data-price="₱5,000" data-image="PROD/Uniform2.jpeg">
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide active">
+                        <img src="PROD/Uniform2.jpeg" alt="Uni2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="PROD/Uniform3.jpeg" alt="Uni3">
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <div class="carousel-indicator active"></div>
+                    <div class="carousel-indicator"></div>
+                </div>
+            </div>
+            <p class="product-name">Kumite Gi Super Light Air Cool Red and Blue</p>
+            <p class="price">₱5,000</p>
+            <div class="size-selection">
+                <select>
+                    <option>Please select size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+</div>
+    <footer>
+        <p>&copy; 2025 PKTS Karate Dojo. All Rights Reserved.</p>
+    </footer>
+</div>
+
+<div id="cart-toast" class="toast">Item added to cart!</div>
+<script src="js/cart.js"></script>
+<script src="js/prod.js"></script>
+</body>
+</html>
